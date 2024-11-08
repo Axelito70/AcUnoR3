@@ -1,0 +1,4 @@
+RewriteEngine On //abilita la esctritura del servidor.
+RewriteRule ^([a-zA-Z0-9\-_./])$ index.php?view=$1 //explica los parametros que permitiremos en la ruta URL y rediriga todo a index.php
+view es la vista
+RewriteRule ^([a-zA-Z0-9/\-_]+)$ index.php?view=$1 //es lo mismo solo que el + son mallores parametros inicio y el de arriba solo valida 1 campo a ingresar
